@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://dv2xtfl1pivmc"]
+
+[ext_resource type="PackedScene" uid="uid://dp5ga760fellp" path="res://personaje.tscn" id="1_7ndnk"]
+[ext_resource type="PackedScene" uid="uid://da5ito8848x27" path="res://mob.tscn" id="1_cqlvy"]
+[ext_resource type="PackedScene" uid="uid://bp8jkrveowao4" path="res://building 1.tscn" id="2_mravi"]
+
+[node name="Game" type="Node2D"]
+y_sort_enabled = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -30
+follow_viewport_enabled = true
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_right = 1178.0
+offset_bottom = 668.0
+
+[node name="Personaje" parent="." instance=ExtResource("1_7ndnk")]
+position = Vector2(377, 242)
+
+[node name="Mob" parent="." instance=ExtResource("1_cqlvy")]
+position = Vector2(289, 260)
+
+[node name="Mob2" parent="." instance=ExtResource("1_cqlvy")]
+position = Vector2(399, 380)
+
+[node name="Mob3" parent="." instance=ExtResource("1_cqlvy")]
+position = Vector2(494, 364)
+
+[node name="Mob4" parent="." instance=ExtResource("1_cqlvy")]
+position = Vector2(755, 153)
+
+[node name="Mob5" parent="." instance=ExtResource("1_cqlvy")]
+position = Vector2(629, 281)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_mravi")]
+position = Vector2(179, 206)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_mravi")]
+position = Vector2(429, 207)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("2_mravi")]
+position = Vector2(890, 195)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("2_mravi")]
+position = Vector2(872, 493)
